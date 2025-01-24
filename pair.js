@@ -60,7 +60,7 @@ router.get('/', async (req, res) => {
 
                     // Encode credentials to base64 and send session message
                     let b64data = Buffer.from(data).toString('base64');
-                    let session = await Hamza.sendMessage(Hamza.user.id, { text: 'Byte;;;' + b64data });
+                    let session = await Hamza.sendMessage(Hamza.user.id, { text: 'TalkDrove;;;' + b64data });
 await delay(8000)
                     // Send final BYTE_MD_TEXT message
                     let Byte_MD_TEXT = `_SESSION ID_`;
